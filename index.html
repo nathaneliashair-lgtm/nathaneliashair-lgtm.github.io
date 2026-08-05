@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-bind="seo.title">Natan Elias Hair Boutique — מספרה לגברים</title>
+  <meta name="description" data-bind-attr="content:seo.description" content="מספרת בוטיק לגברים בלבד. תספורות מדויקות, עיצוב זקן, גילוח קלאסי ויחס אישי. קביעת תור אונליין." />
+  <meta property="og:title" content="Natan Elias Hair Boutique" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/img/natan-portrait-2.webp" />
+  <meta name="theme-color" content="#f4f1ea" />
+  <link rel="icon" type="image/png" href="/img/logo.png" />
+  <link rel="apple-touch-icon" href="/img/logo.png" />
+  <link rel="preload" href="/fonts/Assistant-400-hebrew.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/SuezOne-400-hebrew.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" href="/img/hero-light.webp" />
+  <link rel="stylesheet" href="/css/fonts.css?v=9" />
+  <link rel="stylesheet" href="/css/style.css?v=9" />
+</head>
+<body>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Natan Elias Hair Boutique — לראש העמוד">
+        <img src="/img/logo.webp" alt="לוגו Natan Elias Hair Boutique" class="nav__logo" width="52" height="52" />
+        <span class="nav__name">NATAN ELIAS<em>HAIR BOUTIQUE</em></span>
+      </a>
+      <nav class="nav__links" aria-label="ניווט ראשי">
+        <a href="#about">אודות</a>
+        <a href="#video">וידאו</a>
+        <a href="#services">מחירון</a>
+        <a href="#gallery">גלריה</a>
+        <a href="#contact">צור קשר</a>
+      </nav>
+      <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="btn btn--solid btn--nav" data-bind-href="links.booking">
+        <span data-bind="hero.ctaBooking">קביעת תור</span>
+      </a>
+      <button class="nav__burger" id="burger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about">אודות</a>
+      <a href="#video">וידאו</a>
+      <a href="#services">מחירון</a>
+      <a href="#gallery">גלריה</a>
+      <a href="#contact">צור קשר</a>
+      <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="btn btn--solid" data-bind-href="links.booking">
+        <span data-bind="hero.ctaBooking">קביעת תור</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" aria-label="פתיח">
+      <div class="hero__panel">
+        <div class="hero__panel-inner">
+          <img src="/img/logo.webp" alt="" aria-hidden="true" class="hero__emblem reveal-up" width="118" height="118" />
+          <p class="hero__kicker reveal-up"><span data-bind="hero.kicker">מספרה לגברים בלבד</span></p>
+          <h1 class="hero__title">
+            <span class="mask"><span class="hero__title-main" data-bind="hero.title">NATAN ELIAS</span></span>
+            <span class="hero__title-sub reveal-up" data-bind="hero.subtitle">HAIR BOUTIQUE</span>
+          </h1>
+          <p class="hero__text reveal-up" data-bind="hero.text">
+            חוויית מספרה יוקרתית לגברים. תספורות מדויקות, עיצוב זקן ויחס אישי — כי אתה לא עוד לקוח, אתה אורח.
+          </p>
+          <div class="hero__actions reveal-up">
+            <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="btn btn--gold btn--lg btn--shine" data-bind-href="links.booking">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+              <span data-bind="hero.ctaBooking">קביעת תור אונליין</span>
+            </a>
+            <a href="https://wa.me/972526747637" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg" data-bind-href="links.whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2Zm4.52 12.94c-.25-.13-1.47-.72-1.69-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.78.97-.15.17-.29.19-.54.06a6.77 6.77 0 0 1-3.38-2.95c-.25-.44.26-.4.73-1.35.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+              <span data-bind="hero.ctaWhatsapp">דברו איתי בוואטסאפ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__img" id="heroImg" aria-hidden="true"></div>
+        <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="hero__seal" data-bind-href="links.booking" aria-label="קביעת תור אונליין">
+          <svg class="hero__seal-ring" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <path id="sealPath" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
+            </defs>
+            <text><textPath href="#sealPath" startOffset="0">NATAN ELIAS &#160;✦&#160; HAIR BOUTIQUE &#160;✦&#160; BOOK ONLINE &#160;✦&#160; </textPath></text>
+          </svg>
+          <span class="hero__seal-core" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================ MARQUEE =========================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>תספורת גבר<i>✦</i>עיצוב זקן<i>✦</i>פייד<i>✦</i>שעווה<i>✦</i>מגבת חמה<i>✦</i>קווים חדים<i>✦</i>יחס אישי<i>✦</i></span>
+        <span>תספורת גבר<i>✦</i>עיצוב זקן<i>✦</i>פייד<i>✦</i>שעווה<i>✦</i>מגבת חמה<i>✦</i>קווים חדים<i>✦</i>יחס אישי<i>✦</i></span>
+      </div>
+    </div>
+
+    <!-- =========================== VALUES ============================= -->
+    <section class="values">
+      <div class="section__inner values__grid">
+        <article class="value reveal">
+          <span class="value__num">01</span>
+          <svg class="value__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M14.5 3.5 8 10l-4.5 4.5a2.1 2.1 0 0 0 3 3L11 13l6.5-6.5M14.5 3.5 20 2l-1.5 5.5M14.5 3.5 18.5 7.5"/><circle cx="6" cy="18" r="1"/></svg>
+          <h3>דיוק בכל פרט</h3>
+          <p>קווים חדים, פיידים מושלמים וגימור מוקפד — כל תספורת מותאמת אישית לפנים ולסגנון שלך.</p>
+        </article>
+        <article class="value reveal">
+          <span class="value__num">02</span>
+          <svg class="value__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C.9 9.7 2.3 6 5.5 6 8 6 9.5 8 12 8s4-2 6.5-2c3.2 0 4.6 3.7 3 6.5C19 16.65 12 21 12 21Z"/></svg>
+          <h3>יחס אישי</h3>
+          <p>אצלנו לא מרגישים כמו עוד לקוח בתור. מקשיבים, מייעצים ודואגים שתצא מרוצה בדיוק כמו שרצית.</p>
+        </article>
+        <article class="value reveal">
+          <span class="value__num">03</span>
+          <svg class="value__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 2 15 8.5 22 9.5 17 14.5 18.2 21.5 12 18 5.8 21.5 7 14.5 2 9.5 9 8.5Z"/></svg>
+          <h3>חוויה יוקרתית</h3>
+          <p>אווירה מוקפדת, כלים מקצועיים ומגבת חמה — הפינוק שכל גבר מגיע לו.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================= -->
+    <section class="about section" id="about">
+      <div class="section__inner about__grid">
+        <figure class="about__media">
+          <div class="about__img-wrap reveal-img">
+            <img src="/img/natan-portrait-2.webp" alt="נתן אליאס — הברבר, עם מספריים ביד" loading="lazy" width="900" height="1200" data-bind-src="about.image" />
+          </div>
+          <div class="about__img-wrap about__img-wrap--sub reveal-img">
+            <img src="/img/natan-salon.webp" alt="נתן אליאס בתוך המספרה" loading="lazy" width="1400" height="1050" data-bind-src="about.image2" />
+          </div>
+          <figcaption class="about__badge">
+            <img src="/img/logo.webp" alt="" width="66" height="66" />
+          </figcaption>
+        </figure>
+        <div class="about__body">
+          <p class="section__kicker reveal"><i>אודות</i></p>
+          <h2 class="section__title reveal" data-bind="about.title">נעים להכיר, נתן אליאס</h2>
+          <p class="about__text reveal" data-bind="about.text">
+            ברוכים הבאים ל־Natan Elias Hair Boutique — מספרת בוטיק לגברים בלבד. אני מאמין שתספורת היא לא רק מראה, היא הרגשה.
+          </p>
+          <blockquote class="about__quote reveal">
+            <span class="about__quote-mark" aria-hidden="true">”</span>
+            <span data-bind="about.highlight">תספורת זה לא מה שאני עושה. זה מי שאני.</span>
+          </blockquote>
+          <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="link-arrow reveal" data-bind-href="links.booking">
+            <span data-bind="hero.ctaBooking">קביעת תור אונליין</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= VIDEO ============================ -->
+    <section class="vid section" id="video">
+      <div class="section__inner vid__grid">
+        <div class="vid__body">
+          <p class="section__kicker reveal"><i data-bind="video.subtitle">וידאו</i></p>
+          <h2 class="section__title reveal" data-bind="video.title">רגע לפני שקובעים תור</h2>
+          <p class="vid__text reveal" data-bind="video.text">
+            הצצה קצרה למספרה, לאווירה ולדרך העבודה שלי. לחצו על ההפעלה וצפו — ואז פשוט תקבעו תור.
+          </p>
+          <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="btn btn--gold btn--lg btn--shine reveal" data-bind-href="links.booking">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+            <span data-bind="hero.ctaBooking">קביעת תור אונליין</span>
+          </a>
+        </div>
+
+        <div class="vid__stage reveal">
+          <div class="vid__frame">
+            <video id="promoVideo" class="vid__el" playsinline preload="none" poster="/video/presentation-poster.webp" width="480" height="784">
+              <source src="/video/presentation.mp4" type="video/mp4" />
+            </video>
+            <button type="button" class="vid__play" id="videoPlay" aria-label="הפעלת סרטון ההיכרות">
+              <span class="vid__play-btn" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.29-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z"/></svg>
+              </span>
+              <span class="vid__play-label" data-bind="video.cta">צפייה בסרטון</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== SERVICES =========================== -->
+    <section class="services section" id="services">
+      <div class="section__inner">
+        <div class="services__head">
+          <div>
+            <p class="section__kicker reveal"><i data-bind="services.subtitle">מחירון</i></p>
+            <h2 class="section__title reveal" data-bind="services.title">השירותים שלנו</h2>
+          </div>
+        </div>
+        <div class="services__menu" id="servicesGrid"></div>
+        <p class="services__note reveal" data-bind="services.note"></p>
+      </div>
+    </section>
+
+    <!-- ========================== ATMOSPHERE ========================== -->
+    <section class="atmos" aria-label="אווירה">
+      <div class="atmos__bg" aria-hidden="true"></div>
+      <div class="section__inner atmos__inner">
+        <p class="atmos__quote reveal">כל כיסא הוא במה.<br>כל תספורת היא יצירה.</p>
+      </div>
+    </section>
+
+    <!-- =========================== GALLERY ============================ -->
+    <section class="gallery section" id="gallery">
+      <div class="section__inner">
+        <p class="section__kicker reveal"><i data-bind="gallery.subtitle">גלריה</i></p>
+        <h2 class="section__title reveal" data-bind="gallery.title">העבודות שלנו</h2>
+      </div>
+      <div class="gallery__grid section__inner section__inner--wide" id="galleryGrid"></div>
+    </section>
+
+    <!-- ============================ CTA BAND ========================== -->
+    <section class="cta" id="booking">
+      <div class="section__inner cta__inner">
+        <img src="/img/logo.webp" alt="" aria-hidden="true" class="cta__logo reveal" width="88" height="88" />
+        <h2 class="cta__title reveal" data-bind="contact.title">בואו להתחדש</h2>
+        <p class="cta__text reveal" data-bind="contact.text">
+          קובעים תור אונליין תוך שניות, או שולחים הודעה בוואטסאפ — ואני כבר דואג לכל השאר.
+        </p>
+        <div class="cta__actions reveal">
+          <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="btn btn--gold btn--lg" data-bind-href="links.booking">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+            <span data-bind="hero.ctaBooking">קביעת תור אונליין</span>
+          </a>
+          <a href="https://wa.me/972526747637" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg" data-bind-href="links.whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2Zm4.52 12.94c-.25-.13-1.47-.72-1.69-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.78.97-.15.17-.29.19-.54.06a6.77 6.77 0 0 1-3.38-2.95c-.25-.44.26-.4.73-1.35.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+            <span data-bind="hero.ctaWhatsapp">וואטסאפ</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= HOURS / CONTACT ====================== -->
+    <section class="contact section" id="contact">
+      <div class="section__inner contact__grid">
+        <div class="contact__col">
+          <p class="section__kicker reveal"><i>מידע</i></p>
+          <h2 class="section__title reveal" data-bind="hours.title">שעות פעילות</h2>
+          <dl class="hours" id="hoursList"></dl>
+        </div>
+        <div class="contact__col">
+          <p class="section__kicker reveal"><i>צור קשר</i></p>
+          <h2 class="section__title reveal">דברו איתנו</h2>
+          <div class="contact__cards">
+            <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="ccard ccard--book reveal" data-bind-href="links.booking">
+              <span class="ccard__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+              </span>
+              <span class="ccard__body">
+                <strong data-bind="hero.ctaBooking">קביעת תור אונליין</strong>
+                <span>מערכת זימון תורים — Point</span>
+              </span>
+              <svg class="ccard__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+            </a>
+
+            <a href="https://wa.me/972526747637" target="_blank" rel="noopener" class="ccard ccard--wa reveal" data-bind-href="links.whatsapp">
+              <span class="ccard__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2Zm0 18.1c-1.48 0-2.94-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.78.97-.15.17-.29.19-.54.06a6.77 6.77 0 0 1-3.38-2.95c-.25-.44.26-.4.73-1.35.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+              </span>
+              <span class="ccard__body">
+                <strong>וואטסאפ</strong>
+                <span>שלחו לנו הודעה מהירה</span>
+              </span>
+              <svg class="ccard__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+            </a>
+
+            <a href="tel:+972526747637" id="phoneLink" class="ccard reveal">
+              <span class="ccard__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              </span>
+              <span class="ccard__body">
+                <strong>התקשרו אלינו</strong>
+                <span id="phoneLabel">052-674-7637</span>
+              </span>
+              <svg class="ccard__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+            </a>
+
+            <a id="addressItem" href="#" target="_blank" rel="noopener" class="ccard ccard--waze reveal" data-bind-href="links.waze" hidden>
+              <span class="ccard__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.218 0C9.915 0 6.835 1.49 4.723 4.148c-1.515 1.913-2.31 4.272-2.31 6.706v1.739c0 .894-.62 1.738-1.862 1.813-.298.025-.547.224-.547.522-.05.82.82 2.31 2.012 3.502.82.844 1.788 1.515 2.832 2.036a3 3 0 0 0 2.955 3.528 2.966 2.966 0 0 0 2.931-2.385h2.509c.323 1.689 2.086 2.856 3.974 2.21 1.64-.546 2.36-2.409 1.763-3.924a12.84 12.84 0 0 0 1.838-1.465 10.73 10.73 0 0 0 3.18-7.65c0-2.882-1.118-5.589-3.155-7.625A10.899 10.899 0 0 0 13.218 0zm0 1.217c2.558 0 4.967.994 6.78 2.807a9.525 9.525 0 0 1 2.807 6.78A9.526 9.526 0 0 1 20 17.585a9.647 9.647 0 0 1-6.78 2.807h-2.46a3.008 3.008 0 0 0-2.93-2.41 3.03 3.03 0 0 0-2.534 1.367v.024a8.945 8.945 0 0 1-2.41-1.788c-.844-.844-1.316-1.614-1.515-2.11a2.858 2.858 0 0 0 1.441-.846 2.959 2.959 0 0 0 .795-2.036v-1.789c0-2.11.696-4.197 2.012-5.861 1.863-2.385 4.62-3.726 7.6-3.726zm-2.41 5.986a1.192 1.192 0 0 0-1.191 1.192 1.192 1.192 0 0 0 1.192 1.193A1.192 1.192 0 0 0 12 8.395a1.192 1.192 0 0 0-1.192-1.192zm7.204 0a1.192 1.192 0 0 0-1.192 1.192 1.192 1.192 0 0 0 1.192 1.193 1.192 1.192 0 0 0 1.192-1.193 1.192 1.192 0 0 0-1.192-1.192zm-7.377 4.769a.596.596 0 0 0-.546.845 4.813 4.813 0 0 0 4.346 2.757 4.77 4.77 0 0 0 4.347-2.757.596.596 0 0 0-.547-.845h-.025a.561.561 0 0 0-.521.348 3.59 3.59 0 0 1-3.254 2.061 3.591 3.591 0 0 1-3.254-2.061.64.64 0 0 0-.546-.348z"/></svg>
+              </span>
+              <span class="ccard__body">
+                <strong>ניווט עם Waze</strong>
+                <span id="addressLabel"></span>
+              </span>
+              <svg class="ccard__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+            </a>
+
+            <a id="instaItem" href="#" target="_blank" rel="noopener" class="ccard ccard--ig reveal" data-bind-href="links.instagram" hidden>
+              <span class="ccard__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <span class="ccard__body">
+                <strong>אינסטגרם</strong>
+                <span>@natanelias_hairstyle</span>
+              </span>
+              <svg class="ccard__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+            </a>
+
+            <a id="fbItem" href="#" target="_blank" rel="noopener" class="ccard ccard--fb reveal" data-bind-href="links.facebook" hidden>
+              <span class="ccard__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+              </span>
+              <span class="ccard__body">
+                <strong>פייסבוק</strong>
+                <span>העמוד שלנו בפייסבוק</span>
+              </span>
+              <svg class="ccard__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <img src="/img/logo.webp" alt="Natan Elias Hair Boutique" class="footer__logo" width="72" height="72" />
+      <p class="footer__name">NATAN ELIAS</p>
+      <p class="footer__sub">HAIR BOUTIQUE</p>
+      <p class="footer__tag" data-bind="brand.tagline">מספרה לגברים בלבד</p>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/natanelias_hairstyle" target="_blank" rel="noopener" id="footerInsta" class="footer__soc" data-bind-href="links.instagram" aria-label="אינסטגרם" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" id="footerFb" class="footer__soc" data-bind-href="links.facebook" aria-label="פייסבוק" hidden>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+        </a>
+        <a href="https://wa.me/972526747637" target="_blank" rel="noopener" class="footer__soc" data-bind-href="links.whatsapp" aria-label="וואטסאפ">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2Zm0 18.1c-1.48 0-2.94-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24Z"/></svg>
+        </a>
+        <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="footer__soc" data-bind-href="links.booking" aria-label="קביעת תור">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" id="footerWaze" class="footer__soc" data-bind-href="links.waze" aria-label="Waze" hidden>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.218 0C9.915 0 6.835 1.49 4.723 4.148c-1.515 1.913-2.31 4.272-2.31 6.706v1.739c0 .894-.62 1.738-1.862 1.813-.298.025-.547.224-.547.522-.05.82.82 2.31 2.012 3.502.82.844 1.788 1.515 2.832 2.036a3 3 0 0 0 2.955 3.528 2.966 2.966 0 0 0 2.931-2.385h2.509c.323 1.689 2.086 2.856 3.974 2.21 1.64-.546 2.36-2.409 1.763-3.924a12.84 12.84 0 0 0 1.838-1.465 10.73 10.73 0 0 0 3.18-7.65c0-2.882-1.118-5.589-3.155-7.625A10.899 10.899 0 0 0 13.218 0zm0 1.217c2.558 0 4.967.994 6.78 2.807a9.525 9.525 0 0 1 2.807 6.78A9.526 9.526 0 0 1 20 17.585a9.647 9.647 0 0 1-6.78 2.807h-2.46a3.008 3.008 0 0 0-2.93-2.41 3.03 3.03 0 0 0-2.534 1.367v.024a8.945 8.945 0 0 1-2.41-1.788c-.844-.844-1.316-1.614-1.515-2.11a2.858 2.858 0 0 0 1.441-.846 2.959 2.959 0 0 0 .795-2.036v-1.789c0-2.11.696-4.197 2.012-5.861 1.863-2.385 4.62-3.726 7.6-3.726zm-2.41 5.986a1.192 1.192 0 0 0-1.191 1.192 1.192 1.192 0 0 0 1.192 1.193A1.192 1.192 0 0 0 12 8.395a1.192 1.192 0 0 0-1.192-1.192zm7.204 0a1.192 1.192 0 0 0-1.192 1.192 1.192 1.192 0 0 0 1.192 1.193 1.192 1.192 0 0 0 1.192-1.193 1.192 1.192 0 0 0-1.192-1.192zm-7.377 4.769a.596.596 0 0 0-.546.845 4.813 4.813 0 0 0 4.346 2.757 4.77 4.77 0 0 0 4.347-2.757.596.596 0 0 0-.547-.845h-.025a.561.561 0 0 0-.521.348 3.59 3.59 0 0 1-3.254 2.061 3.591 3.591 0 0 1-3.254-2.061.64.64 0 0 0-.546-.348z"/></svg>
+        </a>
+      </div>
+
+      <p class="footer__copy">© <span id="year"></span> <span data-bind="brand.name">Natan Elias Hair Boutique</span></p>
+    </div>
+  </footer>
+
+  <!-- Boutons flottants : RDV · Waze · WhatsApp -->
+  <div class="fabs" role="group" aria-label="פעולות מהירות">
+    <a href="https://app.point-app.net/b/35879" target="_blank" rel="noopener" class="fab fab--book" data-bind-href="links.booking" aria-label="קביעת תור אונליין">
+      <span class="fab__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="m9.5 15.5 1.8 1.8 3.4-3.6"/></svg>
+      </span>
+      <span class="fab__label">קביעת תור</span>
+    </a>
+
+    <a href="#" target="_blank" rel="noopener" id="fabWaze" class="fab fab--waze" data-bind-href="links.waze" aria-label="ניווט אלינו עם Waze" hidden>
+      <span class="fab__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.218 0C9.915 0 6.835 1.49 4.723 4.148c-1.515 1.913-2.31 4.272-2.31 6.706v1.739c0 .894-.62 1.738-1.862 1.813-.298.025-.547.224-.547.522-.05.82.82 2.31 2.012 3.502.82.844 1.788 1.515 2.832 2.036a3 3 0 0 0 2.955 3.528 2.966 2.966 0 0 0 2.931-2.385h2.509c.323 1.689 2.086 2.856 3.974 2.21 1.64-.546 2.36-2.409 1.763-3.924a12.84 12.84 0 0 0 1.838-1.465 10.73 10.73 0 0 0 3.18-7.65c0-2.882-1.118-5.589-3.155-7.625A10.899 10.899 0 0 0 13.218 0zm0 1.217c2.558 0 4.967.994 6.78 2.807a9.525 9.525 0 0 1 2.807 6.78A9.526 9.526 0 0 1 20 17.585a9.647 9.647 0 0 1-6.78 2.807h-2.46a3.008 3.008 0 0 0-2.93-2.41 3.03 3.03 0 0 0-2.534 1.367v.024a8.945 8.945 0 0 1-2.41-1.788c-.844-.844-1.316-1.614-1.515-2.11a2.858 2.858 0 0 0 1.441-.846 2.959 2.959 0 0 0 .795-2.036v-1.789c0-2.11.696-4.197 2.012-5.861 1.863-2.385 4.62-3.726 7.6-3.726zm-2.41 5.986a1.192 1.192 0 0 0-1.191 1.192 1.192 1.192 0 0 0 1.192 1.193A1.192 1.192 0 0 0 12 8.395a1.192 1.192 0 0 0-1.192-1.192zm7.204 0a1.192 1.192 0 0 0-1.192 1.192 1.192 1.192 0 0 0 1.192 1.193 1.192 1.192 0 0 0 1.192-1.193 1.192 1.192 0 0 0-1.192-1.192zm-7.377 4.769a.596.596 0 0 0-.546.845 4.813 4.813 0 0 0 4.346 2.757 4.77 4.77 0 0 0 4.347-2.757.596.596 0 0 0-.547-.845h-.025a.561.561 0 0 0-.521.348 3.59 3.59 0 0 1-3.254 2.061 3.591 3.591 0 0 1-3.254-2.061.64.64 0 0 0-.546-.348z"/></svg>
+      </span>
+      <span class="fab__label">ניווט ב-Waze</span>
+    </a>
+
+    <a href="https://wa.me/972526747637" target="_blank" rel="noopener" class="fab fab--wa" data-bind-href="links.whatsapp" aria-label="שלחו הודעת וואטסאפ">
+      <span class="fab__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2Zm0 18.1c-1.48 0-2.94-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.78.97-.15.17-.29.19-.54.06a6.77 6.77 0 0 1-3.38-2.95c-.25-.44.26-.4.73-1.35.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+      </span>
+      <span class="fab__label">וואטסאפ</span>
+    </a>
+  </div>
+
+  <!-- Lightbox galerie -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="תצוגת תמונה מוגדלת" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="סגירה">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="הקודם">&#8250;</button>
+    <img src="" alt="" id="lightboxImg" />
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="הבא">&#8249;</button>
+  </div>
+
+  <script defer src="/js/main.js?v=9"></script>
+</body>
+</html>
